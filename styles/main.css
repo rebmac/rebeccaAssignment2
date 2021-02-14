@@ -960,6 +960,7 @@ fieldset {
     text-align: right;
     background-color: rgba(248, 251, 5, 0.5);
     padding-right: 8px;
+    border-radius: 5%;
   }
   .mainHeader i {
     visibility: visible;
@@ -1065,7 +1066,7 @@ fieldset {
     position: absolute;
     top: 25px;
     right: 25px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     background-color: transparent;
   }
   .sideBar {
@@ -1107,7 +1108,7 @@ fieldset {
     position: absolute;
     top: 25px;
     right: 25px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     background-color: transparent;
   }
   .logo {
