@@ -952,12 +952,19 @@ fieldset {
     line-height: 4rem;
     font-size: 2.8rem;
   }
+  .active {
+    display: block;
+  }
+  .navigation {
+    padding-top: 80px;
+    text-align: right;
+  }
   .mainHeader i {
     visibility: visible;
     position: absolute;
     top: 25px;
     right: 25px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     background-color: transparent;
   }
   .headerSofa img,
@@ -1087,8 +1094,11 @@ fieldset {
   .blogButton {
     width: 100%;
   }
-  nav {
+  .navigation {
     display: none;
+  }
+  .active {
+    display: block;
   }
   .contactHeader i {
     visibility: visible;

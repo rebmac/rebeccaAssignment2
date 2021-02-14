@@ -133,6 +133,7 @@ footer {
 
 .navigation {
   display: flex;
+
 }
 
 nav ul a {
@@ -234,10 +235,6 @@ nav ul a:hover {
   display: flex;
 }
 
-// .icon{
-//   width: 50%;
-// }
-
 .fas {
   font-size: 2.3rem;
   background: $accentColor;
@@ -248,6 +245,10 @@ nav ul a:hover {
   text-align: center;
 }
 
+// .active{
+//   display: block;
+// }
+
 .fab {
   font-size: 2.3rem;
   padding: 10px;
@@ -256,6 +257,8 @@ nav ul a:hover {
   text-align: center;
   color: $buttonColor;
 }
+
+
 
 .featureBox h2 {
   margin: 0;
@@ -705,13 +708,22 @@ fieldset {
     line-height: 4rem;
     font-size: 2.8rem;
   }
+  .active{
+      display: block;
+    }
 
+
+
+    .navigation{
+      padding-top: 80px;
+      text-align: right;
+    }
   .mainHeader i {
     visibility: visible;
     position: absolute;
     top: 25px;
     right: 25px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     background-color: transparent;
   }
 
@@ -862,8 +874,16 @@ fieldset {
   //-BLOG- MEDIA QUERIES END
   //-CONTACT- MEDIA QUERIES START
 
-  nav {
+  // nav {
+  //   display: none;
+  // }
+
+  .navigation{
     display: none;
+  }
+
+  .active{
+    display: block;
   }
 
   .contactHeader i {
@@ -933,3 +953,4 @@ fieldset {
   }
 }
 //-CONTACT- MEDIA QUERIES END
+
