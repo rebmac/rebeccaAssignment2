@@ -20,7 +20,6 @@ body {
 
 h1 {
   font-size: 6.8rem;
-  font-weight: 400;
 }
 
 h2 {
@@ -28,7 +27,6 @@ h2 {
   font-size: 3.3rem;
   line-height: 5.8rem;
   letter-spacing: 0.21rem;
-  font-weight: 400;
   text-transform: uppercase;
   display: inline-block;
 }
@@ -51,15 +49,19 @@ img {
 
 p {
   font-family: $secondaryFont;
-  font-weight: 400;
   line-height: 3.2rem;
-  font-size: 2rem;
   letter-spacing: 0.2rem;
+}
+
+h1,
+h2,
+p,
+footer{
+  font-weight: 400;
 }
 
 button {
   font-family: $primaryFont;
-  font-size: 2rem;
   text-align: center;
   line-height: 3.2rem;
   letter-spacing: 0.1rem;
@@ -69,9 +71,14 @@ button {
   border: 1px solid $buttonColor;
   text-transform: uppercase;
 }
+p,
+button,
+span,
+footer{
+  font-size: 2rem;
+}
 
 span {
-  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -79,11 +86,9 @@ footer {
   height: 5vh;
   background: $specialBlack;
   color: $specialWhite;
-  font-size: 2rem;
   text-align: center;
   padding: 10px 0 30px 0;
   font-family: $secondaryFont;
-  font-weight: 400;
   margin-top: 100px;
 }
 
@@ -133,7 +138,6 @@ footer {
 
 .navigation {
   display: flex;
-
 }
 
 nav ul a {
@@ -245,10 +249,6 @@ nav ul a:hover {
   text-align: center;
 }
 
-// .active{
-//   display: block;
-// }
-
 .fab {
   font-size: 2.3rem;
   padding: 10px;
@@ -257,8 +257,6 @@ nav ul a:hover {
   text-align: center;
   color: $buttonColor;
 }
-
-
 
 .featureBox h2 {
   margin: 0;
@@ -284,11 +282,8 @@ nav ul a:hover {
   justify-content: flex-end;
 }
 
-.newLocationImage img {
-  width: 85%;
-}
-
-.groupProgramsImage img {
+.newLocationImage img,
+.groupProgramsImage img{
   width: 85%;
 }
 
@@ -302,17 +297,11 @@ nav ul a:hover {
   position: relative;
   z-index: 2;
 }
-// .readBox img {
 
-//   object-fit: cover;
-// }
 .leftImageYellowBox {
-  width: 85%;
   height: 90%;
-  background-color: #f8fb05;
   z-index: -1;
   position: absolute;
-  top: 5.1rem;
   right: 6.7rem;
 }
 
@@ -329,32 +318,24 @@ nav ul a:hover {
 }
 
 .rightImageYellowBox {
-  width: 85%;
   height: 62%;
-  background-color: #f8fb05;
   z-index: -1;
   position: absolute;
-  top: 5.1rem;
   right: 2.7rem;
 }
 
-// .leftImageYellowBox {
-//   width: 100%;
-//   height: 100%;
-//   background-color: $accentColor;
-//   z-index: -1;
-//   position: absolute;
-// }
-
+.rightImageYellowBox,
+.leftImageYellowBox{
+  background-color: $accentColor;
+  top: 5.1rem;
+  width: 85%;
+}
 .newLocationsText {
   text-align: right;
 }
 
-.newLocationsText {
-  padding: 40px;
-}
-
-.groupProgramsText {
+.newLocationsText,
+.groupProgramsText{
   padding: 40px;
 }
 
@@ -376,14 +357,12 @@ nav ul a:hover {
 //-MAIN- BOTTOM STYLE START
 
 .bottomBanner {
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bottomBannerText {
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,12 +370,10 @@ nav ul a:hover {
   flex-direction: column;
 }
 
-// .bottomBanner h2,
-// .bottomBanner p,
-// .bottomBanner button {
-//   // justify-content: center;
-//   text-align: center;
-// }
+.bottomBanner,
+.bottomBannerText{
+  height: 50vh;
+}
 
 .bottomBanner p {
   width: 90%;
@@ -412,6 +389,10 @@ nav ul a:hover {
 
 //-----------------------------------BLOG PAGE START---
 //-BLOG- HEADER START
+.blogheaderTitle,
+.blogTitleAndLogo{
+  display: flex;
+}
 
 .blogBody {
   background-color: $specialGreen;
@@ -420,19 +401,14 @@ nav ul a:hover {
 .blogHeader {
   background-image: url(../assets/blog-image.jpg);
   height: 50vh;
-  // display: flex;
-  // flex-wrap: wrap;
   @include headerStyles();
-  // justify-content: space-between;
 }
 
 .blogheaderTitle {
-  display: flex;
   justify-content: space-between;
 }
 
 .blogTitleAndLogo {
-  display: flex;
   flex-direction: column;
 }
 
@@ -477,7 +453,6 @@ nav ul a:hover {
   width: 30%;
   background-color: $accentColor;
   position: relative;
-  // height: auto;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -495,19 +470,14 @@ nav ul a:hover {
   margin-top: -2rem;
 }
 
-// .sideBarImage img {
-//   position: absolute;
-//   left: 14px;
-//   top: -20px;
-//   border: 1px solid black;
-// }
-
 .recentPostList li {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: $secondaryFont;
   line-height: 3rem;
+  padding-left: 2rem;
 }
-ul.recentPostList {
+
+ul.recentPostList{
   padding-left: 2rem;
 }
 //-BLOG- BLOG AND SIDE BAR END
@@ -541,17 +511,6 @@ fieldset {
   margin: 0;
   border: none;
 }
-
-// input {
-//   border: none;
-//   border-bottom: 1px solid $buttonColor;
-//   background-color: $specialGreen;
-//   font-family: $secondaryFont;
-//   text-transform: uppercase;
-//   font-size: 2rem;
-//   padding-top: 20px;
-//   // width: 30%;
-// }
 
 .blogFieldSet input {
   border: none;
@@ -701,7 +660,6 @@ fieldset {
   //-MAIN-MEDIA QUERIES START
   .mainHeader {
     height: 50vh;
-    // width: 50vw;
   }
 
   .homePageLogo {
@@ -711,7 +669,9 @@ fieldset {
   .active{
       display: block;
     }
-
+    nav ul a:hover {
+      border-bottom: 2px solid $buttonColor;
+    }
 
 
     .navigation{
@@ -719,6 +679,7 @@ fieldset {
       text-align: right;
       background-color:rgba(248, 251, 5, .5);
       padding-right: 8px;
+      padding-bottom: 12px;
       border-radius: 5%;
     }
   .mainHeader i {
@@ -877,9 +838,6 @@ fieldset {
   //-BLOG- MEDIA QUERIES END
   //-CONTACT- MEDIA QUERIES START
 
-  // nav {
-  //   display: none;
-  // }
 
   .navigation{
     display: none;

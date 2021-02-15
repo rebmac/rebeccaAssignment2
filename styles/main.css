@@ -291,7 +291,6 @@ body {
 
 h1 {
   font-size: 6.8rem;
-  font-weight: 400;
 }
 
 h2 {
@@ -299,7 +298,6 @@ h2 {
   font-size: 3.3rem;
   line-height: 5.8rem;
   letter-spacing: 0.21rem;
-  font-weight: 400;
   text-transform: uppercase;
   display: inline-block;
 }
@@ -322,15 +320,19 @@ img {
 
 p {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
   line-height: 3.2rem;
-  font-size: 2rem;
   letter-spacing: 0.2rem;
+}
+
+h1,
+h2,
+p,
+footer {
+  font-weight: 400;
 }
 
 button {
   font-family: "Kumar One", cursive;
-  font-size: 2rem;
   text-align: center;
   line-height: 3.2rem;
   letter-spacing: 0.1rem;
@@ -341,8 +343,14 @@ button {
   text-transform: uppercase;
 }
 
-span {
+p,
+button,
+span,
+footer {
   font-size: 2rem;
+}
+
+span {
   font-weight: 700;
 }
 
@@ -350,11 +358,9 @@ footer {
   height: 5vh;
   background: #151514;
   color: #f5f5f5;
-  font-size: 2rem;
   text-align: center;
   padding: 10px 0 30px 0;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
   margin-top: 100px;
 }
 
@@ -559,10 +565,7 @@ nav ul a:hover {
           justify-content: flex-end;
 }
 
-.newLocationImage img {
-  width: 85%;
-}
-
+.newLocationImage img,
 .groupProgramsImage img {
   width: 85%;
 }
@@ -577,12 +580,9 @@ nav ul a:hover {
 }
 
 .leftImageYellowBox {
-  width: 85%;
   height: 90%;
-  background-color: #f8fb05;
   z-index: -1;
   position: absolute;
-  top: 5.1rem;
   right: 6.7rem;
 }
 
@@ -597,23 +597,24 @@ nav ul a:hover {
 }
 
 .rightImageYellowBox {
-  width: 85%;
   height: 62%;
-  background-color: #f8fb05;
   z-index: -1;
   position: absolute;
-  top: 5.1rem;
   right: 2.7rem;
+}
+
+.rightImageYellowBox,
+.leftImageYellowBox {
+  background-color: #f8fb05;
+  top: 5.1rem;
+  width: 85%;
 }
 
 .newLocationsText {
   text-align: right;
 }
 
-.newLocationsText {
-  padding: 40px;
-}
-
+.newLocationsText,
 .groupProgramsText {
   padding: 40px;
 }
@@ -631,7 +632,6 @@ nav ul a:hover {
 }
 
 .bottomBanner {
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,7 +644,6 @@ nav ul a:hover {
 }
 
 .bottomBannerText {
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,6 +660,11 @@ nav ul a:hover {
           flex-direction: column;
 }
 
+.bottomBanner,
+.bottomBannerText {
+  height: 50vh;
+}
+
 .bottomBanner p {
   width: 90%;
   text-align: left;
@@ -668,6 +672,13 @@ nav ul a:hover {
 
 .bottomBanner button {
   margin: 0 auto;
+}
+
+.blogheaderTitle,
+.blogTitleAndLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .blogBody {
@@ -685,18 +696,12 @@ nav ul a:hover {
 }
 
 .blogheaderTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .blogTitleAndLogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -768,9 +773,10 @@ nav ul a:hover {
 }
 
 .recentPostList li {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Lato", sans-serif;
   line-height: 3rem;
+  padding-left: 2rem;
 }
 
 ul.recentPostList {
@@ -955,11 +961,15 @@ fieldset {
   .active {
     display: block;
   }
+  nav ul a:hover {
+    border-bottom: 2px solid #065635;
+  }
   .navigation {
     padding-top: 80px;
     text-align: right;
     background-color: rgba(248, 251, 5, 0.5);
     padding-right: 8px;
+    padding-bottom: 12px;
     border-radius: 5%;
   }
   .mainHeader i {
