@@ -42,12 +42,12 @@
 
     <section class="formAndInfo wrapper">
       <div class="contactFormContainer">
-        <form action="" class="yellowBoxSibling">
+        <form action="" class="yellowBoxSibling" name="formName">
           <fieldset class="contactFieldSet">
             <div class="contactYellowBox"></div>
             <!-- name -->
             <label for="name" class="visuallyHidden">Name</label>
-            <input type="text" class="name" placeholder="Name" />
+            <input id="name" type="text" class="name bob" placeholder="Name" name="name"/>
 
             <!-- email -->
             <label for="email" class="visuallyHidden">Email</label>
@@ -55,7 +55,7 @@
               type="email"
               placeholder="Email Address"
               id="email"
-              class="contactEmail"
+              class="contactEmail bob"
             />
 
             <!-- text area -->
@@ -63,7 +63,7 @@
             <textarea
               id="textArea"
               name="textarea"
-              class="contactTextArea"
+              class="contactTextArea bob"
               placeholder="Comment"
               rows="6"
               cols="50"
